@@ -143,7 +143,13 @@
 <section id="contact" class="bg-white text-gray-900 py-24">
   <div class="max-w-4xl mx-auto px-8">
     <h3 class="contact-title">Apply for the Opportunity</h3>
-    <form action="https://wa.me/919391806462" class="contact-form">
+    <form class="contact-form" onsubmit="sendToWhatsApp(event)">
+  <input type="text" id="name" placeholder="Your Full Name" required>
+  <input type="number" id="age" placeholder="Your Age" required>
+  <input type="text" id="work" placeholder="Current Occupation" required>
+  <textarea id="reason" placeholder="Why do you want this opportunity?" rows="4" required></textarea>
+  <button type="submit">Submit & Connect on WhatsApp</button>
+</form>
       <input type="text" placeholder="Your Full Name" required>
       <input type="number" placeholder="Your Age" required>
       <input type="text" placeholder="Current Occupation" required>
@@ -156,9 +162,34 @@
 <footer class="footer">
   © 2025 Kiran | Official Entrepreneur Opportunity
 </footer>
+<script>
+function sendToWhatsApp(event) {
+  event.preventDefault();
 
+  const name = document.getElementById("name").value;
+  const age = document.getElementById("age").value;
+  const work = document.getElementById("work").value;
+  const reason = document.getElementById("reason").value;
+
+  const phoneNumber = "919391806462"; // Your WhatsApp number
+
+  const message = `
+New Opportunity Application 🚀
+
+👤 Name: ${name}
+🎂 Age: ${age}
+💼 Occupation: ${work}
+📝 Reason: ${reason}
+`;
+
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
+}
+</script>
+  
 </body>
 </html>
+
 
 
 
