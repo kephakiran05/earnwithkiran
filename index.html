@@ -156,7 +156,7 @@ window.addEventListener("scroll", () => {
   });
 });
 
-/* WhatsApp Form */
+/* WhatsApp Form with Welcome Message */
 function sendToWhatsApp(e) {
   e.preventDefault();
 
@@ -165,19 +165,25 @@ function sendToWhatsApp(e) {
   const work = document.getElementById("work").value;
   const reason = document.getElementById("reason").value;
 
+  // Welcome message before redirect
+  alert(
+`🎉 Welcome to Earn With Kiran!
+
+Thank you for showing interest in this opportunity.
+Your details are ready and will now be sent securely via WhatsApp.
+
+Please click OK to continue 🚀`
+  );
+
   const phone = "919391806462";
 
   const message =
-`🚀 NEW WEBSITE LEAD
+`🚀 NEW WEBSITE APPLICATION
 
 👤 Name: ${name}
 🎂 Age: ${age}
 💼 Occupation: ${work}
-🎯 Reason: ${reason}
-
-📌 Source: Portfolio Website`;
-
-  alert("✅ Details captured! Redirecting to WhatsApp.");
+🎯 Reason: ${reason} `;
 
   window.open(
     `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
@@ -185,6 +191,6 @@ function sendToWhatsApp(e) {
   );
 }
 </script>
-
 </body>
 </html>
+
