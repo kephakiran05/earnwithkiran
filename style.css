@@ -1,11 +1,20 @@
 .site-bg {
-  background: radial-gradient(circle at top, #0f172a, #020617);
+  background:
+    linear-gradient(
+      rgba(2,6,23,0.92),
+      rgba(2,6,23,0.92)
+    ),
+    url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   font-family: 'Inter', sans-serif;
 }
 
+/* Badges & Text */
 .badge {
   display: inline-block;
-  background: rgba(34, 197, 94, 0.15);
+  background: rgba(34,197,94,0.15);
   color: #4ade80;
   padding: 6px 14px;
   border-radius: 999px;
@@ -17,7 +26,7 @@
 .hero-title {
   font-size: 3rem;
   font-weight: 800;
-  color: #ffffff;
+  color: #fff;
   line-height: 1.2;
 }
 
@@ -27,9 +36,10 @@
   color: #cbd5f5;
 }
 
+/* Buttons */
 .btn-primary {
   background: #22c55e;
-  color: #ffffff;
+  color: #fff;
   padding: 14px 28px;
   border-radius: 14px;
   font-weight: 600;
@@ -43,10 +53,11 @@
   font-weight: 600;
 }
 
+/* Sections */
 .section-title {
   font-size: 2.4rem;
   font-weight: 800;
-  color: #ffffff;
+  color: #fff;
   margin-bottom: 16px;
 }
 
@@ -62,17 +73,19 @@
   color: #4ade80;
 }
 
+/* About image */
 .about-img {
   width: 260px;
-  border-radius: 24px;
-  border: 4px solid #22c55e;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
 
+/* Process */
 .process-title {
   font-size: 2.4rem;
   font-weight: 800;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .process-subtitle {
@@ -88,6 +101,7 @@
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
+/* Contact */
 .contact-title {
   font-size: 2.2rem;
   font-weight: 800;
@@ -109,15 +123,45 @@
 
 .contact-form button {
   background: #22c55e;
-  color: #ffffff;
+  color: #fff;
   padding: 14px;
   border-radius: 14px;
   font-weight: 600;
 }
 
+/* Footer */
 .footer {
   background: #020617;
   color: #94a3b8;
   text-align: center;
   padding: 24px;
+}
+
+/* Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Floating WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #22c55e;
+  color: white;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  z-index: 1000;
 }
