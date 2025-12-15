@@ -79,7 +79,7 @@
   <div class="grid md:grid-cols-2 gap-14 items-center">
     <div>
       <span class="badge">Entrepreneur & Mentor</span>
-      <h3 class="section-title">Hi, I’m Kiran </h3>
+      <h3 class="section-title">Hi, I’m Kiran 👋</h3>
       <p class="section-text">
         I’m a Digital Entrepreneur earning ₹20,000+ per month through ethical
         online systems.
@@ -156,7 +156,7 @@ window.addEventListener("scroll", () => {
   });
 });
 
-/* WhatsApp Form with Welcome Message */
+/* WhatsApp Form */
 function sendToWhatsApp(e) {
   e.preventDefault();
 
@@ -165,25 +165,19 @@ function sendToWhatsApp(e) {
   const work = document.getElementById("work").value;
   const reason = document.getElementById("reason").value;
 
-  // Welcome message before redirect
-  alert(
-`🎉 Welcome to Earn With Kiran!
-
-Thank you for showing interest in this opportunity.
-Your details are ready and will now be sent securely via WhatsApp.
-
-Please click OK to continue 🚀`
-  );
-
   const phone = "919391806462";
 
   const message =
-`🚀 NEW WEBSITE APPLICATION
+`🚀 NEW WEBSITE LEAD
 
 👤 Name: ${name}
 🎂 Age: ${age}
 💼 Occupation: ${work}
-🎯 Reason: ${reason} `;
+🎯 Reason: ${reason}
+
+📌 Source: Portfolio Website`;
+
+  alert("✅ Details captured! Redirecting to WhatsApp.");
 
   window.open(
     `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
@@ -191,6 +185,6 @@ Please click OK to continue 🚀`
   );
 }
 </script>
+
 </body>
 </html>
-
