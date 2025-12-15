@@ -1,59 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Kiran | Entrepreneur Opportunity</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kiran | Official Entrepreneur Opportunity</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- External CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="hero-content">
-      <span class="badge">Official Business Opportunity</span>
-      <h1>Hi, I'm <span>Kiran</span></h1>
-      <p>
-        Digital Entrepreneur & Mentor helping people build a genuine
-        <strong>work-from-home income</strong> with training, guidance,
-        and real support.
-      </p>
-      <a href="https://wa.me/919391806462" class="btn">Apply on WhatsApp</a>
-    </div>
+<body class="text-gray-200 site-bg">
 
-    <div class="hero-image">
-      <img src="kiran.png" alt="Kiran Entrepreneur">
-    </div>
-  </section>
+<!-- NAVBAR -->
+<header class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+  <h1 class="text-2xl font-bold text-white">Kiran<span class="text-green-400">.</span></h1>
+  <nav class="space-x-6 font-medium">
+    <a href="#about" class="hover:text-green-400">About</a>
+    <a href="#opportunity" class="hover:text-green-400">Opportunity</a>
+    <a href="#process" class="hover:text-green-400">Process</a>
+    <a href="#contact" class="hover:text-green-400">Contact</a>
+  </nav>
+</header>
 
-  <!-- ABOUT -->
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a Digital Entrepreneur with 6+ months of hands-on experience.
-      I earn ₹20,000+ per month consistently and help serious individuals
-      start a real online business with proper mentorship.
+<!-- HERO -->
+<section class="max-w-7xl mx-auto px-8 py-24 grid md:grid-cols-2 gap-16 items-center">
+  <div>
+    <span class="badge">Official Business Opportunity</span>
+    <h2 class="hero-title">
+      Build Your Income Online<br>
+      With <span class="text-green-400">Mentorship & Support</span>
+    </h2>
+    <p class="hero-text">
+      I help serious individuals start a genuine online business and earn consistently from home using proven systems, step-by-step training, and personal guidance.
     </p>
-  </section>
+    <div class="flex gap-4">
+      <a href="https://wa.me/919391806462" class="btn-primary">Apply on WhatsApp</a>
+      <a href="#process" class="btn-outline">How It Works</a>
+    </div>
+  </div>
 
-  <!-- OPPORTUNITY -->
-  <section class="opportunity">
-    <h2>This Opportunity Is For You If</h2>
-    <ul>
-      <li>✔ You want work from home</li>
-      <li>✔ You want real mentorship</li>
-      <li>✔ You are serious about growth</li>
-      <li>✔ You want long-term income</li>
-    </ul>
-  </section>
+  <div class="flex justify-center">
+    <img src="images/kiran.png" alt="Kiran" class="hero-img">
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>Instagram: @earnwithkiran64</p>
-    <p>© 2025 Kiran | Entrepreneur</p>
-  </footer>
+<!-- TRUST BAR -->
+<section class="bg-black/60 py-10">
+  <div class="max-w-6xl mx-auto px-8 grid md:grid-cols-4 gap-6 text-center">
+    <div><h3 class="stat">6+</h3><p>Months Experience</p></div>
+    <div><h3 class="stat">₹20K+</h3><p>Monthly Income</p></div>
+    <div><h3 class="stat">100%</h3><p>Mentorship</p></div>
+    <div><h3 class="stat">WFH</h3><p>Opportunity</p></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="max-w-6xl mx-auto px-8 py-24">
+  <div class="grid md:grid-cols-2 gap-14 items-center">
+    <div>
+      <span class="badge">Founder & Mentor</span>
+      <h3 class="section-title">Hi, I’m Kiran 👋</h3>
+      <p class="section-text">
+        I am a <strong>Digital Entrepreneur and Online Business Mentor</strong> with 6+ months experience, earning ₹20,000+ monthly through ethical online systems.
+      </p>
+      <p class="section-text">
+        My mission is to empower motivated individuals with real mentorship and a proven roadmap.
+      </p>
+      <p class="section-text">
+        If you are serious about upgrading your income and lifestyle, I personally guide you step-by-step.
+      </p>
+    </div>
+
+    <div class="flex justify-center">
+      <img src="kiran.png" class="about-img" alt="Kiran">
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="bg-white text-gray-800 py-24">
+  <div class="max-w-6xl mx-auto px-8">
+    <h3 class="process-title">Your Growth Roadmap</h3>
+    <p class="process-subtitle">A clear system to start, earn, and scale confidently.</p>
+
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="process-card">
+        <h4>Step 1: Apply & Qualify</h4>
+        <p>Connect on WhatsApp and check if this fits your goals.</p>
+      </div>
+      <div class="process-card">
+        <h4>Step 2: Learn & Build</h4>
+        <p>Get training, tools, and mentorship.</p>
+      </div>
+      <div class="process-card">
+        <h4>Step 3: Earn & Scale</h4>
+        <p>Start earning and grow month after month.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-white text-gray-900 py-24">
+  <div class="max-w-4xl mx-auto px-8">
+    <h3 class="contact-title">Apply for the Opportunity</h3>
+    <form action="https://wa.me/919391806462" class="contact-form">
+      <input type="text" placeholder="Your Full Name" required>
+      <input type="number" placeholder="Your Age" required>
+      <input type="text" placeholder="Current Occupation" required>
+      <textarea placeholder="Why do you want this opportunity?" rows="4" required></textarea>
+      <button type="submit">Submit & Connect on WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  © 2025 Kiran | Official Entrepreneur Opportunity
+</footer>
 
 </body>
 </html>
+
+
 
 
